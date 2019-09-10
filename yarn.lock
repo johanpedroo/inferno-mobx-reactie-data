@@ -4993,10 +4993,25 @@ inferno-dev-utils@^6.0.4:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
+inferno-devtools@^7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/inferno-devtools/-/inferno-devtools-7.3.1.tgz#b2a348f202541fdefbec88dbad9e54b16ad7b2a5"
+  integrity sha512-Psy2/1J9cWXGsswu4ALWMwNubaTl/BVbaXEDB2HWvDgpxxEXTuWmP8f27XrCeJAHuecYxGFVww8DfpjSRdJ1pA==
+  dependencies:
+    inferno "7.3.1"
+    inferno-extras "7.3.1"
+
 inferno-error-overlay@^5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/inferno-error-overlay/-/inferno-error-overlay-5.0.4.tgz#ddf2100f0e430e31cb36d9bb2333bb917314bcf9"
   integrity sha512-WCuf8/WSj66OUasHSRywqZ1GR8VrQ2OErlYnothNoHmqaff2wwd890Nu37isPFRQvDhXetCVGGW22i4NcSyd3w==
+
+inferno-extras@7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/inferno-extras/-/inferno-extras-7.3.1.tgz#bc5aa3d19fea60c77baa7faf177c495c40f416f2"
+  integrity sha512-IYMN1a9OhMvnH+NTPkYgsOjS2KQsAiKHqLn4EBsBeivEyo5KTyyzmMqHVGIPEHNZlT+x8sahPHqboUZIJrfcjQ==
+  dependencies:
+    inferno "7.3.1"
 
 inferno-scripts@7.0.4:
   version "7.0.4"
@@ -5061,7 +5076,7 @@ inferno-vnode-flags@7.3.1:
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.3.1.tgz#27f767a03d8f0775f8bc5ad03c9ea07ec66aa2c7"
   integrity sha512-7LKuUGfFVSiFdRH6NVLTetrDbft4BxUePUIjXm4f+g9hginYuBwPbFJbbHK700Ysy4rapTqYnFxSk0k5JBZr+A==
 
-inferno@7.3.1:
+inferno@7.3.1, inferno@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/inferno/-/inferno-7.3.1.tgz#5e356d9a5a218809eb4da49c333d324126515683"
   integrity sha512-9t4G/YjhbiC65d8GHxzfn41qALVf2fvykMdH92ySUiSLr3EQak8gs6rno52KuW7puDZcmJgmMHVA0vTVegtfsQ==

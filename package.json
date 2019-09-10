@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "inferno": "^7.3.1",
-    "inferno-scripts": "7.0.4"
+    "inferno-mobx": "^7.3.1",
+    "inferno-scripts": "7.0.4",
+    "mobx": "^5.13.0"
   },
   "scripts": {
     "start": "inferno-scripts start",
@@ -20,5 +22,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "inferno-devtools": "^7.3.1"
+  }
 }
