@@ -128,7 +128,7 @@
     "@babel/traverse" "^7.4.4"
     "@babel/types" "^7.4.4"
 
-"@babel/helper-create-class-features-plugin@^7.2.0":
+"@babel/helper-create-class-features-plugin@^7.2.0", "@babel/helper-create-class-features-plugin@^7.5.5", "@babel/helper-create-class-features-plugin@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.6.0.tgz#769711acca889be371e9bc2eb68641d55218021f"
   integrity sha512-O1QWBko4fzGju6VoVvrZg0RROCVifcLxiApnGP3OWfWzvxRZFCoBD81K5ur5e3bVY2Vf/5rIJm8cqPKn8HUJng==
@@ -405,6 +405,23 @@
     "@babel/helper-create-class-features-plugin" "^7.2.0"
     "@babel/helper-plugin-utils" "^7.0.0"
 
+"@babel/plugin-proposal-class-properties@^7.0.0":
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.5.5.tgz#a974cfae1e37c3110e71f3c6a2e48b8e71958cd4"
+  integrity sha512-AF79FsnWFxjlaosgdi421vmYG6/jg79bVD0dpD44QdgobzHKuLZ6S3vl8la9qIeSwGi8i1fS0O1mfuDAAdo1/A==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.5.5"
+    "@babel/helper-plugin-utils" "^7.0.0"
+
+"@babel/plugin-proposal-decorators@^7.0.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.6.0.tgz#6659d2572a17d70abd68123e89a12a43d90aa30c"
+  integrity sha512-ZSyYw9trQI50sES6YxREXKu+4b7MAg6Qx2cvyDDYjP2Hpzd3FleOUwC9cqn1+za8d0A2ZU8SHujxFao956efUg==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.6.0"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/plugin-syntax-decorators" "^7.2.0"
+
 "@babel/plugin-proposal-dynamic-import@^7.5.0":
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-dynamic-import/-/plugin-proposal-dynamic-import-7.5.0.tgz#e532202db4838723691b10a67b8ce509e397c506"
@@ -458,6 +475,13 @@
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-async-generators/-/plugin-syntax-async-generators-7.2.0.tgz#69e1f0db34c6f5a0cf7e2b3323bf159a76c8cb7f"
   integrity sha512-1ZrIRBv2t0GSlcwVoQ6VgSLpLgiN/FVQUzt9znxo7v2Ov4jJrs8RY8tv0wvDmFN3qIdMKWrmMMW6yZ0G19MfGg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+
+"@babel/plugin-syntax-decorators@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.2.0.tgz#c50b1b957dcc69e4b1127b65e1c33eef61570c1b"
+  integrity sha512-38QdqVoXdHUQfTpZo3rQwqQdWtCn5tMv4uV6r2RMfTqNBuv4ZBhz79SfaQWKTVmxHjeFv/DnXVC/+agHCklYWA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
@@ -548,7 +572,7 @@
     "@babel/helper-split-export-declaration" "^7.0.0"
     globals "^11.1.0"
 
-"@babel/plugin-transform-classes@^7.2.0", "@babel/plugin-transform-classes@^7.5.5":
+"@babel/plugin-transform-classes@^7.0.0", "@babel/plugin-transform-classes@^7.2.0", "@babel/plugin-transform-classes@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-classes/-/plugin-transform-classes-7.5.5.tgz#d094299d9bd680a14a2a0edae38305ad60fb4de9"
   integrity sha512-U2htCNK/6e9K7jGyJ++1p5XRU+LJjrwtoiVn9SzRlDT2KubcZ11OOwy3s24TjHxPgxNwonCYP7U2K51uVYCMDg==
@@ -1909,6 +1933,16 @@ babel-preset-jest@^23.2.0:
   dependencies:
     babel-plugin-jest-hoist "^23.2.0"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
+
+babel-preset-mobx@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-mobx/-/babel-preset-mobx-2.0.0.tgz#968ce0000880afcc5cbb78ecbaac37984b193df2"
+  integrity sha512-hde0Tcc8P4iij+jlc2ieO3B0RYgWczMhVMEF2i46TkqUBHw9oKOcF0PQ3TA62FRqhs8Td5cISGKoq7ziSXEYgA==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.0.0"
+    "@babel/plugin-proposal-decorators" "^7.0.0"
+    "@babel/plugin-transform-classes" "^7.0.0"
+    "@babel/plugin-transform-regenerator" "^7.0.0"
 
 babel-register@^6.26.0:
   version "6.26.0"
@@ -4375,11 +4409,6 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fsevents@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.0.1.tgz#cdc8dc0145fa4198f4500ec09df35e79e5e52cf7"
-  integrity sha512-p+CXqK/iLvDESUWdn3NA3JVO9HxdfI+iXx8xR3DqWgKZvQNiEVpAyUQo0lmwz8rqksb4xaGerG291xuwwhX2kA==
-
 fsevents@^1.2.2, fsevents@^1.2.3:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.4.tgz#f41dcb1af2582af3692da36fc55cbd8e1041c426"
@@ -4701,6 +4730,11 @@ hoek@4.x.x:
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
   integrity sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
 
+hoist-non-inferno-statics@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/hoist-non-inferno-statics/-/hoist-non-inferno-statics-1.1.3.tgz#7d870f4160bfb6a59269b45c343c027f0e30ab35"
+  integrity sha1-fYcPQWC/tqWSabRcNDwCfw4wqzU=
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -4965,6 +4999,20 @@ infer-owner@^1.0.3:
   resolved "https://registry.yarnpkg.com/infer-owner/-/infer-owner-1.0.4.tgz#c4cefcaa8e51051c2a40ba2ce8a3d27295af9467"
   integrity sha512-IClj+Xz94+d7irH5qRyfJonOdfTzuDaifE6ZPWfx0N0+/ATZCbuTPq2prFl526urkQd90WyUKIh1DfBQ2hMz9A==
 
+inferno-create-class@7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/inferno-create-class/-/inferno-create-class-7.3.1.tgz#b97e6bd75d58b8b5fd5026dc7833ed0d385c060e"
+  integrity sha512-R3TsxkU28lfDjEvoBEzsglR2iAAW9Odt/dwbygbOe5OB+OGEIgUcXMxEaz+ZsARWfbibkkNpSZpw/6Niy8KNzA==
+  dependencies:
+    inferno "7.3.1"
+
+inferno-create-element@7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-7.3.1.tgz#b85f8ede233b19653662d6ac3bd88892319b09e4"
+  integrity sha512-HyC4UTmSB+3+erVp/0Y5BYioBxKLZpKrIBYEHTzeDXfsJv9wEsJ5KbZ5vsmQDh+jj6NRd72cCPMBXmN9pyyMCA==
+  dependencies:
+    inferno "7.3.1"
+
 inferno-dev-utils@^6.0.4:
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/inferno-dev-utils/-/inferno-dev-utils-6.0.4.tgz#ecd9d90b93070d18ffb2f05b9b6b78ed5216d83b"
@@ -5013,58 +5061,18 @@ inferno-extras@7.3.1:
   dependencies:
     inferno "7.3.1"
 
-inferno-scripts@7.0.4:
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/inferno-scripts/-/inferno-scripts-7.0.4.tgz#3eeb449e9863e98e6ef913dfbf847479e0b3ad17"
-  integrity sha512-KwQnXCsTb9dgpszZRC/yn0iZehtcjfQNoFFGBvjl5qMP4LphxnIgUGz93aiSZ1k9EzmaXXjhx379Qh8IpQ5a7g==
+inferno-mobx@^7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/inferno-mobx/-/inferno-mobx-7.3.1.tgz#e3168f029daf815415decf61c191a465e3d15a64"
+  integrity sha512-PciMXmrpHQDqRv9nW4VhTFcfGbKvUwehae5rrLKDZ+Ap2pcD2Dkx03PQewo0eeX5K0f9iHbViD027ANBT8qlsQ==
   dependencies:
-    "@babel/core" "7.2.0"
-    "@svgr/webpack" "4.1.0"
-    babel-core "7.0.0-bridge.0"
-    babel-eslint "10.0.1"
-    babel-jest "23.6.0"
-    babel-loader "8.0.4"
-    babel-preset-inferno-app "^8.0.3"
-    bfj "6.1.1"
-    case-sensitive-paths-webpack-plugin "2.1.2"
-    chalk "2.4.1"
-    css-loader "1.0.1"
-    dotenv "6.1.0"
-    dotenv-expand "4.2.0"
-    eslint "5.9.0"
-    eslint-config-inferno-app "^7.0.2"
-    eslint-loader "2.1.1"
-    eslint-plugin-flowtype "3.2.0"
-    eslint-plugin-import "2.14.0"
-    eslint-plugin-inferno "^7.11.0"
-    eslint-plugin-jsx-a11y "6.1.2"
-    file-loader "2.0.0"
-    fs-extra "7.0.1"
-    html-webpack-plugin "4.0.0-alpha.2"
-    identity-obj-proxy "3.0.0"
-    inferno-dev-utils "^6.0.4"
-    jest "23.6.0"
-    jest-pnp-resolver "1.0.2"
-    jest-resolve "23.6.0"
-    mini-css-extract-plugin "0.4.5"
-    optimize-css-assets-webpack-plugin "5.0.1"
-    pnp-webpack-plugin "1.2.1"
-    postcss-flexbugs-fixes "4.1.0"
-    postcss-loader "3.0.0"
-    postcss-preset-env "6.4.0"
-    postcss-safe-parser "4.0.1"
-    react-app-polyfill "^0.1.3"
-    resolve "1.8.1"
-    sass-loader "7.1.0"
-    style-loader "0.23.1"
-    terser-webpack-plugin "1.1.0"
-    url-loader "1.1.2"
-    webpack "4.26.1"
-    webpack-dev-server "3.1.10"
-    webpack-manifest-plugin "2.0.4"
-    workbox-webpack-plugin "3.6.3"
-  optionalDependencies:
-    fsevents "2.0.1"
+    hoist-non-inferno-statics "^1.1.3"
+    inferno "7.3.1"
+    inferno-create-class "7.3.1"
+    inferno-create-element "7.3.1"
+    inferno-shared "7.3.1"
+    inferno-vnode-flags "7.3.1"
+    mobx "*"
 
 inferno-shared@7.3.1:
   version "7.3.1"
@@ -6653,6 +6661,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mobx@*, mobx@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.13.0.tgz#0fd68f10aa5ff2d146a4ed9e145b53337cfbca59"
+  integrity sha512-eSAntMSMNj0PFL705rgv+aB/z1RjNqDnFEpBe18yQVreXTWiVgIrmBUXzjnJfuba+eo4eAk6zi+/gXQkSUea8A==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
